@@ -1,4 +1,4 @@
-# Nihongo Support System
+# Nihongo Support System (Hololingo)
 
 Hệ thống học tiếng Nhật toàn diện với hỗ trợ AI cho phát âm và các tính năng học tập hiện đại.
 
