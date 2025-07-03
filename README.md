@@ -133,7 +133,7 @@ Dự án này được xây dựng để hỗ trợ việc học tiếng Nhật 
 
 ## Giấy phép
 
-© 2025 Nihongo Support System. Tất cả quyền được bảo lưu.
+© 2025 Hololingo. Tất cả quyền được bảo lưu.
 
 ---
 
