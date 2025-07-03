@@ -113,6 +113,7 @@ nihongo-support-system/
 - **HTML5**: Cấu trúc trang web
 - **CSS3**: Giao diện và animation
 - **JavaScript ES6+**: Logic ứng dụng
+- **Java Spring Boot**: Thiết kế Backend và REST API
 - **Web Speech API**: Nhận diện và tổng hợp giọng nói
 - **MediaRecorder API**: Ghi âm
 - **Service Worker**: Hỗ trợ offline
