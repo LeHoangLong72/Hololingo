@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihongo Support System - Hệ thống học tiếng Nhật</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1><i class="fas fa-torii-gate"></i> Nihongo Support</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Trang chủ</a></li>
+                    <li><a href="#lessons" class="nav-link">Bài học</a></li>
+                    <li><a href="#alphabet" class="nav-link">Bảng chữ cái</a></li>
+                    <li><a href="#vocabulary" class="nav-link">Từ vựng</a></li>
+                    <li><a href="#grammar" class="nav-link">Ngữ pháp</a></li>
+                    <li><a href="#kanji" class="nav-link">Kanji</a></li>
+                    <li><a href="#flashcards" class="nav-link">Thẻ học</a></li>
+                    <li><a href="#pronunciation" class="nav-link">Phát âm AI</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Học tiếng Nhật hiệu quả với AI</h1>
+                <p>Hệ thống học tiếng Nhật toàn diện từ cơ bản đến nâng cao với hỗ trợ AI phát âm</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToSection('lessons')">
+                        <i class="fas fa-play"></i> Bắt đầu học
+                    </button>
+                    <button class="btn-secondary" onclick="scrollToSection('pronunciation')">
+                        <i class="fas fa-microphone"></i> Thử AI phát âm
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-elements">
+                    <div class="element hiragana">あ</div>
+                    <div class="element katakana">カ</div>
+                    <div class="element kanji">漢</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lessons Section -->
+        <section id="lessons" class="lessons-section">
+            <div class="container">
+                <h2>Bài học theo cấp độ</h2>
+                <div class="level-tabs">
+                    <button class="tab-btn active" data-level="beginner">Sơ cấp (N5-N4)</button>
+                    <button class="tab-btn" data-level="intermediate">Trung cấp (N3-N2)</button>
+                    <button class="tab-btn" data-level="advanced">Nâng cao (N1)</button>
+                </div>
+                
+                <div class="lessons-grid" id="lessons-grid">
+                    <!-- Default lessons while loading -->
+                    <div class="lesson-card">
+                        <div class="lesson-number">Bài 1</div>
+                        <h3>Chào hỏi cơ bản</h3>
+                        <p>Học cách chào hỏi và giới thiệu bản thân</p>
+                        <div class="lesson-topics">
+                            <span class="topic-tag">あいさつ</span>
+                            <span class="topic-tag">じこしょうかい</span>
+                        </div>
+                        <div class="lesson-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 0%"></div>
+                            </div>
+                            <span>0%</span>
+                        </div>
+                    </div>
+                    <div class="lesson-card">
+                        <div class="lesson-number">Bài 2</div>
+                        <h3>Số đếm và thời gian</h3>
+                        <p>Học cách đếm số và nói thời gian</p>
+                        <div class="lesson-topics">
+                            <span class="topic-tag">すうじ</span>
+                            <span class="topic-tag">じかん</span>
+                        </div>
+                        <div class="lesson-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 0%"></div>
+                            </div>
+                            <span>0%</span>
+                        </div>
+                    </div>
+                    <div class="lesson-card">
+                        <div class="lesson-number">Bài 3</div>
+                        <h3>Gia đình và mối quan hệ</h3>
+                        <p>Từ vựng về gia đình và các mối quan hệ</p>
+                        <div class="lesson-topics">
+                            <span class="topic-tag">かぞく</span>
+                            <span class="topic-tag">Gia đình</span>
+                        </div>
+                        <div class="lesson-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 0%"></div>
+                            </div>
+                            <span>0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alphabet Section -->
+        <section id="alphabet" class="alphabet-section">
+            <div class="container">
+                <h2>Bảng chữ cái Nhật Bản</h2>
+                <div class="alphabet-tabs">
+                    <button class="tab-btn active" data-alphabet="hiragana">Hiragana</button>
+                    <button class="tab-btn" data-alphabet="katakana">Katakana</button>
+                </div>
+                
+                <div class="alphabet-grid" id="alphabet-grid">
+                    <!-- Default alphabet while loading -->
+                    <div class="alphabet-card">
+                        <div class="alphabet-char">あ</div>
+                        <div class="alphabet-romaji">a</div>
+                    </div>
+                    <div class="alphabet-card">
+                        <div class="alphabet-char">い</div>
+                        <div class="alphabet-romaji">i</div>
+                    </div>
+                    <div class="alphabet-card">
+                        <div class="alphabet-char">う</div>
+                        <div class="alphabet-romaji">u</div>
+                    </div>
+                    <div class="alphabet-card">
+                        <div class="alphabet-char">え</div>
+                        <div class="alphabet-romaji">e</div>
+                    </div>
+                    <div class="alphabet-card">
+                        <div class="alphabet-char">お</div>
+                        <div class="alphabet-romaji">o</div>
+                    </div>
+                    <div class="alphabet-card">
+                        <div class="alphabet-char">か</div>
+                        <div class="alphabet-romaji">ka</div>
+                    </div>
+                    <div class="alphabet-card">
+                        <div class="alphabet-char">き</div>
+                        <div class="alphabet-romaji">ki</div>
+                    </div>
+                    <div class="alphabet-card">
+                        <div class="alphabet-char">く</div>
+                        <div class="alphabet-romaji">ku</div>
+                    </div>
+                    <div class="alphabet-card">
+                        <div class="alphabet-char">け</div>
+                        <div class="alphabet-romaji">ke</div>
+                    </div>
+                    <div class="alphabet-card">
+                        <div class="alphabet-char">こ</div>
+                        <div class="alphabet-romaji">ko</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vocabulary Section -->
+        <section id="vocabulary" class="vocabulary-section">
+            <div class="container">
+                <h2>Từ vựng theo chủ đề</h2>
+                <div class="vocabulary-categories">
+                    <div class="category-card" data-category="basic">
+                        <i class="fas fa-home"></i>
+                        <h3>Cơ bản</h3>
+                        <p>Số đếm, thời gian, màu sắc</p>
+                    </div>
+                    <div class="category-card" data-category="family">
+                        <i class="fas fa-users"></i>
+                        <h3>Gia đình</h3>
+                        <p>Thành viên gia đình, mối quan hệ</p>
+                    </div>
+                    <div class="category-card" data-category="food">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Ẩm thực</h3>
+                        <p>Món ăn, đồ uống, nhà hàng</p>
+                    </div>
+                    <div class="category-card" data-category="travel">
+                        <i class="fas fa-plane"></i>
+                        <h3>Du lịch</h3>
+                        <p>Giao thông, khách sạn, địa điểm</p>
+                    </div>
+                </div>
+                
+                <div class="vocabulary-list" id="vocabulary-list">
+                    <!-- Default vocabulary while loading -->
+                    <div class="vocab-item">
+                        <div class="vocab-japanese">こんにちは</div>
+                        <div class="vocab-reading">konnichiwa</div>
+                        <div class="vocab-meaning">Xin chào</div>
+                        <div class="vocab-example">
+                            <strong>Ví dụ:</strong> こんにちは、田中さん。<br>
+                            <em>Xin chào anh Tanaka.</em>
+                        </div>
+                    </div>
+                    <div class="vocab-item">
+                        <div class="vocab-japanese">ありがとう</div>
+                        <div class="vocab-reading">arigatou</div>
+                        <div class="vocab-meaning">Cảm ơn</div>
+                        <div class="vocab-example">
+                            <strong>Ví dụ:</strong> ありがとうございます。<br>
+                            <em>Cảm ơn rất nhiều.</em>
+                        </div>
+                    </div>
+                    <div class="vocab-item">
+                        <div class="vocab-japanese">すみません</div>
+                        <div class="vocab-reading">sumimasen</div>
+                        <div class="vocab-meaning">Xin lỗi / Xin phép</div>
+                        <div class="vocab-example">
+                            <strong>Ví dụ:</strong> すみません、駅はどこですか。<br>
+                            <em>Xin lỗi, ga tàu ở đâu ạ?</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grammar Section -->
+        <section id="grammar" class="grammar-section">
+            <div class="container">
+                <h2>Ngữ pháp tiếng Nhật</h2>
+                <div class="grammar-topics">
+                    <!-- Grammar topics will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Kanji Section -->
+        <section id="kanji" class="kanji-section">
+            <div class="container">
+                <h2>Học Kanji hiệu quả</h2>
+                <div class="kanji-levels">
+                    <div class="kanji-level" data-level="n5">
+                        <h3>Kanji N5</h3>
+                        <p>103 ký tự cơ bản</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="kanji-level" data-level="n4">
+                        <h3>Kanji N4</h3>
+                        <p>181 ký tự trung cấp</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="kanji-level" data-level="n3">
+                        <h3>Kanji N3</h3>
+                        <p>370 ký tự nâng cao</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="kanji-study" id="kanji-study">
+                    <!-- Kanji study interface -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Flashcards Section -->
+        <section id="flashcards" class="flashcards-section">
+            <div class="container">
+                <h2>Hệ thống thẻ học thông minh</h2>
+                <div class="flashcard-options">
+                    <button class="option-btn" data-type="vocabulary">Từ vựng</button>
+                    <button class="option-btn" data-type="kanji">Kanji</button>
+                    <button class="option-btn" data-type="grammar">Ngữ pháp</button>
+                    <button class="option-btn" data-type="mixed">Hỗn hợp</button>
+                </div>
+                
+                <div class="flashcard-container" id="flashcard-container">
+                    <div class="flashcard" id="flashcard">
+                        <div class="flashcard-inner">
+                            <div class="flashcard-front">
+                                <h3 id="card-question">Nhấn vào thẻ để lật</h3>
+                            </div>
+                            <div class="flashcard-back">
+                                <h3 id="card-answer">Đáp án</h3>
+                                <p id="card-explanation">Giải thích</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flashcard-controls">
+                        <button class="control-btn wrong" onclick="markCard('wrong')">
+                            <i class="fas fa-times"></i> Sai
+                        </button>
+                        <button class="control-btn again" onclick="markCard('again')">
+                            <i class="fas fa-redo"></i> Lại
+                        </button>
+                        <button class="control-btn correct" onclick="markCard('correct')">
+                            <i class="fas fa-check"></i> Đúng
+                        </button>
+                        <button class="control-btn easy" onclick="markCard('easy')">
+                            <i class="fas fa-star"></i> Dễ
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="study-stats">
+                    <div class="stat">
+                        <span class="stat-number" id="cards-studied">0</span>
+                        <span class="stat-label">Thẻ đã học</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" id="accuracy">0%</span>
+                        <span class="stat-label">Độ chính xác</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" id="streak">0</span>
+                        <span class="stat-label">Chuỗi đúng</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pronunciation AI Section -->
+        <section id="pronunciation" class="pronunciation-section">
+            <div class="container">
+                <h2>AI Hỗ trợ phát âm</h2>
+                <div class="pronunciation-interface">
+                    <div class="text-input-area">
+                        <textarea 
+                            id="pronunciation-text" 
+                            placeholder="Nhập văn bản tiếng Nhật để luyện phát âm..."
+                            rows="4"
+                        ></textarea>
+                        <div class="text-suggestions">
+                            <button class="suggestion-btn" onclick="setPronunciationText('こんにちは')">こんにちは</button>
+                            <button class="suggestion-btn" onclick="setPronunciationText('ありがとうございます')">ありがとうございます</button>
+                            <button class="suggestion-btn" onclick="setPronunciationText('すみません')">すみません</button>
+                            <button class="suggestion-btn" onclick="setPronunciationText('はじめまして')">はじめまして</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pronunciation-controls">
+                        <button class="pronunciation-btn listen" onclick="playPronunciation()">
+                            <i class="fas fa-volume-up"></i> Nghe mẫu
+                        </button>
+                        <button class="pronunciation-btn record" onclick="startRecording()" id="record-btn">
+                            <i class="fas fa-microphone"></i> Ghi âm
+                        </button>
+                        <button class="pronunciation-btn analyze" onclick="analyzePronunciation()">
+                            <i class="fas fa-chart-bar"></i> Phân tích
+                        </button>
+                    </div>
+                    
+                    <div class="pronunciation-feedback" id="pronunciation-feedback">
+                        <div class="feedback-score">
+                            <div class="score-circle">
+                                <span class="score-number" id="score-number">--</span>
+                                <span class="score-label">điểm</span>
+                            </div>
+                        </div>
+                        
+                        <div class="feedback-details">
+                            <h4>Đánh giá chi tiết:</h4>
+                            <div class="feedback-item">
+                                <span class="feedback-label">Độ chính xác:</span>
+                                <div class="feedback-bar">
+                                    <div class="feedback-progress" style="width: 0%"></div>
+                                </div>
+                                <span class="feedback-value">0%</span>
+                            </div>
+                            <div class="feedback-item">
+                                <span class="feedback-label">Ngữ điệu:</span>
+                                <div class="feedback-bar">
+                                    <div class="feedback-progress" style="width: 0%"></div>
+                                </div>
+                                <span class="feedback-value">0%</span>
+                            </div>
+                            <div class="feedback-item">
+                                <span class="feedback-label">Tốc độ:</span>
+                                <div class="feedback-bar">
+                                    <div class="feedback-progress" style="width: 0%"></div>
+                                </div>
+                                <span class="feedback-value">0%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="improvement-tips">
+                            <h4>Gợi ý cải thiện:</h4>
+                            <ul id="tips-list">
+                                <li>Bắt đầu ghi âm để nhận phản hồi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nihongo Support System</h3>
+                    <p>Hệ thống học tiếng Nhật toàn diện với công nghệ AI</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên kết nhanh</h4>
+                    <ul>
+                        <li><a href="#lessons">Bài học</a></li>
+                        <li><a href="#vocabulary">Từ vựng</a></li>
+                        <li><a href="#grammar">Ngữ pháp</a></li>
+                        <li><a href="#kanji">Kanji</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hỗ trợ</h4>
+                    <ul>
+                        <li><a href="#">Hướng dẫn sử dụng</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nihongo Support System. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Đang tải...</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/lessons.js"></script>
+    <script src="js/flashcards.js"></script>
+    <script src="js/pronunciation.js"></script>
+</body>
+</html>
