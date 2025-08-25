@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\LAM\\Documents\\GitHub\\C-sharp\\Hololingo\\",
+  "WorkspaceRootPath": "E:\\Hololingo\\Hololingo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8FC420C5-7E74-4018-9AB4-048F329EBD24}|Hololingo\\Hololingo.csproj|c:\\users\\lam\\documents\\github\\c-sharp\\hololingo\\hololingo\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{8FC420C5-7E74-4018-9AB4-048F329EBD24}|Hololingo\\Hololingo.csproj|e:\\hololingo\\hololingo\\hololingo\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FC420C5-7E74-4018-9AB4-048F329EBD24}|Hololingo\\Hololingo.csproj|solutionrelative:hololingo\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FC420C5-7E74-4018-9AB4-048F329EBD24}|Hololingo\\Hololingo.csproj|e:\\hololingo\\hololingo\\hololingo\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8FC420C5-7E74-4018-9AB4-048F329EBD24}|Hololingo\\Hololingo.csproj|solutionrelative:hololingo\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FC420C5-7E74-4018-9AB4-048F329EBD24}|Hololingo\\Hololingo.csproj|c:\\users\\lam\\documents\\github\\c-sharp\\hololingo\\hololingo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8FC420C5-7E74-4018-9AB4-048F329EBD24}|Hololingo\\Hololingo.csproj|e:\\hololingo\\hololingo\\hololingo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8FC420C5-7E74-4018-9AB4-048F329EBD24}|Hololingo\\Hololingo.csproj|solutionrelative:hololingo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FC420C5-7E74-4018-9AB4-048F329EBD24}|Hololingo\\Hololingo.csproj|c:\\users\\lam\\documents\\github\\c-sharp\\hololingo\\hololingo\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{8FC420C5-7E74-4018-9AB4-048F329EBD24}|Hololingo\\Hololingo.csproj|e:\\hololingo\\hololingo\\hololingo\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{8FC420C5-7E74-4018-9AB4-048F329EBD24}|Hololingo\\Hololingo.csproj|solutionrelative:hololingo\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
@@ -22,50 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "E:\\Hololingo\\Hololingo\\Hololingo\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "Hololingo\\Models\\UserModel.cs",
+              "ToolTip": "E:\\Hololingo\\Hololingo\\Hololingo\\Models\\UserModel.cs",
+              "RelativeToolTip": "Hololingo\\Models\\UserModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T13:43:32.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\LAM\\Documents\\GitHub\\C-sharp\\Hololingo\\Hololingo\\wwwroot\\index.html",
+              "DocumentMoniker": "E:\\Hololingo\\Hololingo\\Hololingo\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "Hololingo\\wwwroot\\index.html",
-              "ToolTip": "C:\\Users\\LAM\\Documents\\GitHub\\C-sharp\\Hololingo\\Hololingo\\wwwroot\\index.html",
+              "ToolTip": "E:\\Hololingo\\Hololingo\\Hololingo\\wwwroot\\index.html",
               "RelativeToolTip": "Hololingo\\wwwroot\\index.html",
-              "ViewState": "AgIAAMABAAAAAAAAAAAAABEAAAAWAAAAAAAAAA==",
+              "ViewState": "AQIAANgAAAAAAAAAAAAAAPQAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-08-08T12:33:20.794Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\LAM\\Documents\\GitHub\\C-sharp\\Hololingo\\Hololingo\\wwwroot\\js\\site.js",
+              "DocumentMoniker": "E:\\Hololingo\\Hololingo\\Hololingo\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "Hololingo\\wwwroot\\js\\site.js",
-              "ToolTip": "C:\\Users\\LAM\\Documents\\GitHub\\C-sharp\\Hololingo\\Hololingo\\wwwroot\\js\\site.js",
+              "ToolTip": "E:\\Hololingo\\Hololingo\\Hololingo\\wwwroot\\js\\site.js",
               "RelativeToolTip": "Hololingo\\wwwroot\\js\\site.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-08-08T12:26:55.41Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T12:26:55.41Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\LAM\\Documents\\GitHub\\C-sharp\\Hololingo\\Hololingo\\Program.cs",
+              "DocumentMoniker": "E:\\Hololingo\\Hololingo\\Hololingo\\Program.cs",
               "RelativeDocumentMoniker": "Hololingo\\Program.cs",
-              "ToolTip": "C:\\Users\\LAM\\Documents\\GitHub\\C-sharp\\Hololingo\\Hololingo\\Program.cs",
+              "ToolTip": "E:\\Hololingo\\Hololingo\\Hololingo\\Program.cs",
               "RelativeToolTip": "Hololingo\\Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T12:22:10.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T12:22:10.752Z"
             }
           ]
         }
